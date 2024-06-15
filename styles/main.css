@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+  --link-color: hsl(240, 7%, 78%);
+  --link-hover-color: hsl(307, 75%, 60%);
+  --button-primary-color: hsl(307, 75%, 60%);
+  --button-primary-hover-color: hsla(307, 75%, 40%);
+  --bg-home: url("../assets/bg-page-1.png") no-repeat center center/cover;
+  --bg-universe: url("../assets/bg-page-2.png") no-repeat center center/cover;
+  --bg-exploration: url("../assets/bg-page-3.png") no-repeat center center/cover;
+}
+
+#app {
+  font-family: "Amulya", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  min-height: 100svh;
+}
+
+.logo {
+  width: auto;
+  height: 4.2rem;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  padding: 4rem 7.2rem;
+}
+
+.navbar a {
+  font-family: "Amulya", sans-serif;
+  font-size: 2rem;
+  line-height: 0%;
+  color: var(--link-color);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+.navbar a:hover {
+  font-weight: 700;
+  line-height: 0%;
+  color: var(--link-hover-color);
+}
+.container {
+  width: 100%;
+  padding: 20.2rem 10rem;
+}
+.home-page {
+  min-height: 100svh;
+  background: var(--bg-home);
+  display: grid;
+  place-content: center;
+  place-items: center;
+  gap: 2.4rem;
+}
+.universe-page {
+  min-height: 100svh;
+  background: var(--bg-universe);
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.exploration-page {
+  min-height: 100svh;
+  background: var(--bg-exploration);
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+h1.title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: hsl(0, 0%, 100%);
+}
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+}
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.6rem;
+  padding: 1.6rem 3.2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  background-color: var(--button-primary-color);
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+}
+.button:hover {
+  background-color: var(--button-primary-hover-color);
+}
+
+/* CLASSES UTILITÁRIAS */
+.w-1-2 {
+  width: 50%;
+}
+.mb-6 {
+  margin-bottom: 2.4rem;
+}
+
+.text-pretty {
+  text-wrap: pretty;
+}
+
+.active {
+  font-weight: 700;
+  line-height: 0%;
+  text-decoration: underline !important;
+}
